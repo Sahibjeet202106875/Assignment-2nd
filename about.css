@@ -1,0 +1,115 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Navigation bar styling */
+.main-nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style-type: none;
+}
+
+.main-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+.main-nav a:hover, .main-nav .active a {
+  color: #ff5f20;
+}
+
+/* Banner styling */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/about3.jpg') no-repeat center center/cover;
+  color: rgb(233, 17, 17);
+  padding: 100px 0;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* Content styling */
+.content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    padding: 50px 0;
+  }
+
+  .content {
+    width: 90%;
+  }
+}
+

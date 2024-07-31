@@ -1,0 +1,103 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  header ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  header ul li {
+    display: inline;
+    padding: 0 20px;
+  }
+  
+  header #branding {
+    float: left;
+  }
+  
+  header #branding h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+  }
+  
+  .festival {
+    background: #fff;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .festival:last-child {
+    border-bottom: 0;
+  }
+  
+  .festival h2 {
+    color: #e8491d;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+  }
+  
+  @media (max-width: 700px) {
+    header #branding,
+    header nav {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+  
+    header nav ul {
+      text-align: center;
+    }
+  
+    header nav ul li {
+      display: block;
+      padding: 0;
+    }
+  }
+  

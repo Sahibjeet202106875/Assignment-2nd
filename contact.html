@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Festivals Sahibjeet 202106875</title>
+    <link rel="stylesheet" href="styles/contact.css">
+   <style>
+    .banner {
+  background-image:  url('images/contact1.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  color: rgb(10, 6, 255);
+  padding: 100px 0;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  background-image:  url('images/contact.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="form.html">Register</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <h1>Contact Us</h1>
+        <p><b>Have questions or want to get in touch? Fill out the form below and we'll respond as soon as possible.</b></p>
+    </section>
+
+    <div class="container">
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 festivals</p>
+        <p>Contact: info@festivals.com</p>
+    </footer>
+</body>
+</html>
